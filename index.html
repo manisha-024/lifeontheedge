@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <link rel="icon" href="inner/logo1.png" type="image/x-icon">
+        <title>LifeOnTheEdge</title>
+    </head>
+<body style="background-image: url('colors1.jpg'); background-size: cover; background-position: center;">
+    <header class="w-full fixed" style="background-image: url('colors1.jpg'); padding:0%;">
+        <nav class="p-5 shadow md:flex md:items-center md:justify-between mb-0">
+          <div class="flex justify-between items-center ">
+            <span class="text-2xl font-serif cursor-pointer">
+              <img class="h-10 inline"
+                src="inner/logo1.png">LifeOnTheEdge
+            </span>
+            <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+              <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+            </span>
+          </div>
+          <ul class="md:flex md:items-center z-[1] md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500" style="background-image: url('colors1.jpg'); opacity: 0.9;">
+            <li class="mx-4 my-6 md:my-0">
+              <a href="#home" class="text-xl font-serif hover:text-white duration-500">HOME</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+              <a href="#why" class="text-xl font-serif hover:text-white duration-500">WHY IT MATTERS?</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+              <a href="#vision" class="text-xl font-serif hover:text-white duration-500">OUR VISION</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+              <a href="#about" class="text-xl font-serif hover:text-white duration-500">ABOUT</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+              <a href="donate.html" class="text-xl font-serif hover:text-white duration-500">DONATE</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+              <a href="inner/contact.html" class="text-xl font-serif hover:text-white duration-500">CONTACT</a>
+            </li>
+            <button onclick="goToPage()" class="inline-flex font-serif items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Explore
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </button>
+      <h2 class=""></h2>
+          </ul>
+        </nav>
+      </header>
+      
+       
+<section class="text-gray-600 body-font mb-0" id="home">
+  <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col mb-0">
+      <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded mt-0" alt="hero" src="bestele.jpg">
+      <div class="text-center lg:w-2/3 w-full">
+          <h1 class="title-font sm:text-4xl text-3xl font-serif mb-4 font-medium text-gray-900">A step towards preserving nature</h1>
+          <p class="mb-8 leading-relaxed text-black">Welcome to LifeOnTheEdge, your gateway to a world of conservation and environmental awareness. With every click, you're joining a vital mission to safeguard our planet's precious biodiversity and combat deforestation. Join hands with us as we embark on a journey to protect and cherish the wonders of the natural world.
+            Through compelling content, actionable initiatives, and a vibrant global community of passionate individuals like yourself, we're committed to making a tangible difference. Dive into our website to discover how you can play a crucial role in this essential movement and become a guardian of our planet's future. Together, let's spread awareness, ignite change, and preserve the beauty of our world for generations to come.
+          </p>
+          <section class="text-white -600 body-font mb-0">
+              <div class="container px-5 py- mx-auto">
+                  <div class="flex flex-wrap -mx-4 -mb-10 text-center">
+                      <div class="sm:w-1/2 mb-0 px-4">
+                          <div class="rounded-lg h-64 overflow-hidden">
+                              <img alt="content" class="object-cover object-center h-full w-full" src="interactive.jpg">
+                          </div>
+                           <a href="https://lifeontheedge-biobot.streamlit.app/">
+                          <h2 class="title-font text-2xl font-serif font-medium text-gray-900 mt-6 mb-3"><u>BioBot</u></h2>
+                           </a>
+                          <p class="leading-relaxed text-base mb-0">CLick it, and engage in interactive chats with our AI bot, Biobot, to delve into topics surrounding biodiversity, deforestation, and conservation.</p>
+                      </div>
+                      <div class="sm:w-1/2 mb-0 px-4">
+                          <div class="rounded-lg h-64 overflow-hidden">
+                              <img alt="content" class="object-cover object-center h-full w-full" src="monkey.jpg">
+                          </div>
+                          <a href="explore.html">
+                            <h2 class="title-font text-2xl font-serif font-medium text-gray-900 mt-6 mb-3"><u>Data Nexus</u></h2>
+                          </a>
+                          <p class="leading-relaxed text-base mb-0">Click it, and discover endangered areas in our Data Nexus. Learn where wildlife, plants, and forests are at risk.</p>
+                  </div>
+              </div>
+          </section>
+      </div>
+  </div>
+</section>
+    <div class="container flex flex-col py-24 justify-center items-center mx-auto mb-0" id="why">
+        <div class="w-full md:w-2/3 flex flex-col mb-16 items-center text-center" >
+            <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded h-48 xl:h-64" alt="matters" src="matters.jpg">
+            <h1 class="title-font sm:text-4xl text-3xl font-serif mb-4 text-gray-900">WHY IT MATTERS?</h1>
+            <p class="mb-8 leading-relaxed">Earth's habitats are the building blocks of biodiversity. They support a rich variety of plant and animal species, each with its unique role in the intricate web of life. From lush rainforests to vast savannas, these habitats provide homes, food, and breeding grounds for countless organisms. By maintaining habitat diversity, we safeguard the resilience and stability of ecosystems, ensuring they can adapt to environmental changes and thrive.
+
+                Habitats not only support individual species but also foster interactions between different organisms. For example, in tropical rainforests, the dense vegetation provides a complex network of interconnected habitats that allow for a high level of species diversity. This diversity, in turn, promotes ecological stability by creating intricate food webs and symbiotic relationships.
+                
+                In addition to supporting biodiversity, habitats play a crucial role in providing ecosystem services that are invaluable to human societies.</p>
+        </div>
+        <div class="w-full md:w-2/3 flex flex-col items-center text-center" id="vision">
+            <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="specs-trees.jpg">
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-serif font-medium text-gray-900">OUR VISION</h1>
+            <p class="leading-relaxed">Habitat conservation is essential for the survival and well-being of many species of plants and animals. Habitats provide the necessary resources and conditions that allow species to live, reproduce, and thrive. When habitats are lost or degraded, it can have serious consequences for the species that depend on them, including population declines and even extinction. Habitat loss is often caused by human activities, such as urbanization, agriculture, and resource extraction, and it is important to take steps to minimize these impacts and protect habitats for the benefit of wildlife and the environment as a whole.</p>
+        </div>
+    </div> 
+    <hr class="border-t border-gray-300 my-0 w-full mb-20" id="about">
+   <u><h1 class="title-font sm:text-4xl text-3xl mb-4 font-serif font-medium text-gray-900 text-center">ABOUT US</h1></u> 
+    <h4 class=" sm:text-3xl text-2xl font-serif font-medium text-gray-900 text-center">Project Goal: </h4>
+    <h4 class="mb-4 text-center">Our website aims to raise awareness about wildlife extinction, urging action to preserve endangered species and safeguard biodiversity.</h4>
+    <h1 class="mb-0 sm:text-3xl text-2xl font-serif font-medium text-gray-900 text-center">Contributors:</h1>
+    <div class="flex flex-wrap justify-center items-center mt-0 mb-0">
+        <div class="w-full sm:w-1/2 md:w-1/5 lg:w-1/5 xl:w-1/5 bg-white bg-opacity-50 rounded-lg overflow-hidden mx-4 mb-4">            
+            <div class="h-48 flex justify-center items-center">
+                <img class="w-32 h-32 object-cover rounded-full" src="nabeela.jpg" alt="Nabeela Alam">
+            </div>
+            <div class="text-center p-4">
+                <p>
+                    <a href="https://linkedin.com/in/nabeela-alam-758b5425b" class="text-lg font-semibold mb-2" target="_blank">Nabeela Alam</a>
+                    <a href="https://linkedin.com/in/nabeela-alam-758b5425b" target="_blank">
+                        <img class="w-6 h-6 inline-block ml-1" src="linkedin_logo.png" alt="LinkedIn Logo">
+                       </a>                
+                </p>
+                <p class="text-sm">Backend</p>
+            </div>
+        </div>
+        <div class="w-full sm:w-1/2 md:w-1/5 lg:w-1/5 xl:w-1/5 bg-white bg-opacity-50 rounded-lg overflow-hidden mx-4 mb-4">            
+            <div class="h-48 flex justify-center items-center">
+                <img class="w-32 h-32 object-cover rounded-full" src="manisha.jpg" alt="K Manisha">
+            </div>
+            <div class="text-center p-4">
+                <p>
+                    <a href="https://linkedin.com/in/manishakishtapuram" class="text-lg font-semibold mb-2" target="_blank">K Manisha</a>
+                    <a href="https://linkedin.com/in/manishakishtapuram" target="_blank">
+                        <img class="w-6 h-6 inline-block ml-1" src="linkedin_logo.png" alt="LinkedIn Logo">
+                       </a>
+                </p>
+                <p class="text-sm">Frontend</p>
+            </div>
+        </div>
+        <div class="w-full sm:w-1/2 md:w-1/5 lg:w-1/5 xl:w-1/5 bg-white bg-opacity-50 rounded-lg overflow-hidden mx-4 mb-4">            
+            <div class="h-48 flex justify-center items-center">
+                <img class="w-32 h-32 object-cover rounded-full" src="bhavana.jpg" alt="G Bhavana">
+            </div>
+            <div class="text-center p-4">
+                <p>
+                    <a href="https://linkedin.com/in/bhavana-g-n5305" class="text-lg font-semibold mb-2" target="_blank">G Bhavana</a>
+                    <a href="https://linkedin.com/in/bhavana-g-n5305" target="_blank">
+                        <img class="w-6 h-6 inline-block ml-1" src="linkedin_logo.png" alt="LinkedIn Logo">
+                       </a>                
+                </p>
+                <p class="text-sm">Frontend</p>
+            </div>
+        </div>
+        <div class="w-full sm:w-1/2 md:w-1/5 lg:w-1/5 xl:w-1/5 bg-white bg-opacity-50 rounded-lg overflow-hidden mx-4 mb-4">            
+            <div class="h-48 flex justify-center items-center">
+                <img class="w-32 h-32 object-cover rounded-full" src="vaishnavi.jpeg" alt="Vaishnavi">
+            </div>
+            <div class="text-center p-4">
+                <p>
+                    <a href="https://linkedin.com/in/vaishnavi-munigala-673b1727a" class="text-lg font-semibold mb-2" target="_blank">M Vaishnavi</a>
+                   <a href="https://linkedin.com/in/vaishnavi-munigala-673b1727a" target="_blank">
+                    <img class="w-6 h-6 inline-block ml-1" src="linkedin_logo.png" alt="LinkedIn Logo">
+                   </a>
+                </p>
+                <p class="text-sm">AI Engineer</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="bg-gray-800 text-gray-300 py-6 ">
+        <div class="container mx-auto flex flex-col md:flex-row justify-center items-center">
+          <div class="flex flex-col items-center md:flex-row">
+            <p class="mb-2 md:mb-0 mr-4">&copy; 2024 LifeOnTheEdge</p>
+            <ul class="flex">
+              <li><a href="inner/contact.html" class="hover:text-white text-">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <script src="script.js"></script>
+</body>
+</html>
