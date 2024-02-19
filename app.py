@@ -2,6 +2,7 @@ from dotenv import load_dotenv
 import streamlit as st
 import os
 import google.generativeai as genai
+from google.generativeai.types import generation_types
 
 load_dotenv()
 genai.configure(api_key=os.getenv("GOOGLE_API_KEYS"))
@@ -9,8 +10,11 @@ model = genai.GenerativeModel("gemini-pro")
 chat = model.start_chat(history=[])
 
 def get_gemini_response(question):
-    response = chat.send_message(question, stream=True)
-    return response 
+    try:
+        response = chat.send_message(question, stream=True)
+        return response 
+    except generation_types.BlockedPromptException as e:
+        st.session_state['chat_history'].append(("BioBot", f"HEY, MIND YOUR LANGUAGE!"))
 
 st.set_page_config(page_title="BioBot")
 
@@ -40,10 +44,10 @@ if st.session_state.get('input_text', '') != input_text:
         st.session_state['chat_history'].append(("You", input_text))
         response = get_gemini_response(input_text)
         
-        # Concatenate all response chunks into a single string
-        response_text = ' '.join([chunk.text for chunk in response])
-        
-        st.session_state['chat_history'].append(("BioBot", response_text))
+        if response is not None:
+            # Concatenate all response chunks into a single string
+            response_text = ' '.join([chunk.text for chunk in response])
+            st.session_state['chat_history'].append(("BioBot", response_text))
         
         if 'input_text' in st.query_params:
             del st.query_params['input_text']
@@ -54,10 +58,10 @@ if submit_button:
     st.session_state['chat_history'].append(("You", input_text))
     response = get_gemini_response(input_text)
     
-    # Concatenate all response chunks into a single string
-    response_text = ' '.join([chunk.text for chunk in response])
-    
-    st.session_state['chat_history'].append(("BioBot", response_text))
+    if response is not None:
+        # Concatenate all response chunks into a single string
+        response_text = ' '.join([chunk.text for chunk in response])
+        st.session_state['chat_history'].append(("BioBot", response_text))
     
     if 'input_text' in st.query_params:
         del st.query_params['input_text']
