@@ -32,7 +32,25 @@ for role, text in st.session_state['chat_history']:
 
 input_text = st.text_input("Your message:", key="input", value="")
 submit_button = st.button("Ask")
-if submit_button and input_text:
+
+# Check if the user pressed the "Enter" key
+if st.session_state.get('input_text', '') != input_text:
+    st.session_state['input_text'] = input_text
+    if input_text:
+        st.session_state['chat_history'].append(("You", input_text))
+        response = get_gemini_response(input_text)
+        
+        # Concatenate all response chunks into a single string
+        response_text = ' '.join([chunk.text for chunk in response])
+        
+        st.session_state['chat_history'].append(("BioBot", response_text))
+        
+        if 'input_text' in st.query_params:
+            del st.query_params['input_text']
+        st.experimental_rerun()
+
+# Check if the user clicked the "Ask" button
+if submit_button:
     st.session_state['chat_history'].append(("You", input_text))
     response = get_gemini_response(input_text)
     
@@ -44,4 +62,3 @@ if submit_button and input_text:
     if 'input_text' in st.query_params:
         del st.query_params['input_text']
     st.experimental_rerun()
-
