@@ -10,7 +10,7 @@
         <title>LifeOnTheEdge</title>
     </head>
 <body style="background-image: url('colors1.jpg'); background-size: cover; background-position: center;">
-    <header class="w-full fixed" style="background-image: url('colors1.jpg'); padding:0%;">
+    <header class="w-full fixed" style="background-image: url('colors1.jpg'); padding:0%; z-index: 10;">
         <nav class="p-5 shadow md:flex md:items-center md:justify-between mb-0">
           <div class="flex justify-between items-center ">
             <span class="text-2xl font-serif cursor-pointer">
@@ -29,36 +29,51 @@
               <a href="#why" class="text-xl font-serif hover:text-white duration-500">WHY IT MATTERS?</a>
             </li>
             <li class="mx-4 my-6 md:my-0">
-              <a href="#vision" class="text-xl font-serif hover:text-white duration-500">OUR VISION</a>
+              <a href="#vision" class="text-xl font-serif hover:text-white duration-500">VISION</a>
             </li>
             <li class="mx-4 my-6 md:my-0">
               <a href="#about" class="text-xl font-serif hover:text-white duration-500">ABOUT</a>
             </li>
             <li class="mx-4 my-6 md:my-0">
-              <a href="donate.html" class="text-xl font-serif hover:text-white duration-500">DONATE</a>
-            </li>
-            <li class="mx-4 my-6 md:my-0">
               <a href="inner/contact.html" class="text-xl font-serif hover:text-white duration-500">CONTACT</a>
             </li>
-            <button onclick="goToPage()" class="inline-flex font-serif items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Explore
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg>
-            </button>
-      <h2 class=""></h2>
+      
           </ul>
         </nav>
       </header>
-      
+
        
 <section class="text-gray-600 body-font mb-0" id="home">
-  <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col mb-0">
-      <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded mt-0" alt="hero" src="bestele.jpg">
-      <div class="text-center lg:w-2/3 w-full">
-          <h1 class="title-font sm:text-4xl text-3xl font-serif mb-4 font-medium text-gray-900">A step towards preserving nature</h1>
-          <p class="mb-8 leading-relaxed text-black">Welcome to LifeOnTheEdge, your gateway to a world of conservation and environmental awareness. With every click, you're joining a vital mission to safeguard our planet's precious biodiversity and combat deforestation. Join hands with us as we embark on a journey to protect and cherish the wonders of the natural world.
-            Through compelling content, actionable initiatives, and a vibrant global community of passionate individuals like yourself, we're committed to making a tangible difference. Dive into our website to discover how you can play a crucial role in this essential movement and become a guardian of our planet's future. Together, let's spread awareness, ignite change, and preserve the beauty of our world for generations to come.
-          </p>
+<div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col mb-0">
+<div class="container mx-auto flex px-5 py-2 items-start justify-center flex-col mb-0" style="z-index: 0;">
+    <div class="relative" style="justify-self: flex-start;">
+        <img class="w-full object-cover object-center rounded mt-0 mb-2" alt="hero" src="top.jpg" style="opacity:0.7; min-height: 350px;">
+        <div class="absolute inset-0 flex items-center justify-start pl-8">
+            <div class="text-left text-black">
+             <U><h1 class="text-4xl sm:text-2xl font-helvetica md:text-4xl lg:text-5xl font-bold mb-2">GIVE <span class="auto-type" style="color: WHITE;"></span></h1></U>
+              <p class="text-xl sm:text-sm md:text-lg font-serif lg:text-xl font-semibold">By donating today, you're investing in the sustainability</p>
+              <p class="text-xl sm:text-sm md:text-lg font-serif lg:text-xl font-semibold"> of our planet for future generations.</p>
+                <div class="flex items-center mt-4">
+                    <button onclick="goDonate()" class="inline-flex font-serif items-center bg-blue-300 border-0 py-1 px-2 focus:outline-none hover:bg-indigo-900 rounded text-lg md:text-xl mt-4 md:mt-0 mr-3">Donate Now
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
+                    <button onclick="goToPage()" class="inline-flex font-serif items-center bg-blue-300 border-0 py-1 px-2 focus:outline-none hover:bg-gray-300 rounded text-lg md:text-xl mt-4 md:mt-0">Explore
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="text-center lg:w-2/3 w-full">
+          <h1 class="title-font sm:text-4xl text-3xl font-serif mb-4 font-medium text-gray-900">A Step Towards Preserving Nature</h1>
+          <p class="mb-8 leading-relaxed text-black">Welcome to LifeOnTheEdge, your portal to conservation and environmental awareness. Every click contributes to our mission of protecting biodiversity and combating deforestation. Your support funds initiatives vital for safeguarding endangered species and their habitats. Join us in preserving the wonders of nature through generous donations and active participation. Explore our site to learn how you can make a difference and become a guardian of our planet's future.
+
+            Together, let's spread awareness, ignite change, and ensure the enduring beauty of our world for generations to come.</p>
           <section class="text-white -600 body-font mb-0">
               <div class="container px-5 py- mx-auto">
                   <div class="flex flex-wrap -mx-4 -mb-10 text-center">
@@ -66,19 +81,19 @@
                           <div class="rounded-lg h-64 overflow-hidden">
                               <img alt="content" class="object-cover object-center h-full w-full" src="interactive.jpg">
                           </div>
-                           <a href="https://biobot-lifeontheedge.streamlit.app/" target="_blank">
-                          <h2 class="title-font text-2xl font-serif font-medium text-gray-900 mt-6 mb-3"><u>BioBot</u></h2>
-                           </a>
-                          <p class="leading-relaxed text-base mb-0">CLick it, and engage in interactive chats with our AI bot, Biobot, to delve into topics surrounding biodiversity, deforestation, and conservation.</p>
+                           <a href="https://lifeontheedge-biobot.streamlit.app/">
+                            <h2 class="title-font text-2xl font-serif font-medium text-gray-900 mt-6 mb-3 inline-block py-1 px-2 bg-blue-300 text-black rounded hover:bg-gray-200 transition duration-300">BioBot</h2>
+                          </a>
+                          <p class="leading-relaxed text-black mb-0">CLick it, and engage in interactive chats with our AI bot, Biobot, to delve into topics surrounding biodiversity, deforestation, and conservation.</p>
                       </div>
                       <div class="sm:w-1/2 mb-0 px-4">
                           <div class="rounded-lg h-64 overflow-hidden">
                               <img alt="content" class="object-cover object-center h-full w-full" src="monkey.jpg">
                           </div>
                           <a href="explore.html">
-                            <h2 class="title-font text-2xl font-serif font-medium text-gray-900 mt-6 mb-3"><u>Data Nexus</u></h2>
-                          </a>
-                          <p class="leading-relaxed text-base mb-0">Click it, and discover endangered areas in our Data Nexus. Learn where wildlife, plants, and forests are at risk.</p>
+                           <h2 class="title-font text-2xl font-serif font-medium text-gray-900 mt-6 mb-3 inline-block py-1 px-2 bg-blue-300 text-black rounded hover:bg-gray-200 transition duration-300">Data Nexus</h2></a>
+                          <p class="leading-relaxed text-black mb-0">Click it, and dive into our Data Nexus to deepen your understanding of wildlife conservation efforts and combat wildlife extinction with informed action.</p>
+                      </div>
                   </div>
               </div>
           </section>
@@ -98,13 +113,13 @@
         <div class="w-full md:w-2/3 flex flex-col items-center text-center" id="vision">
             <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="specs-trees.jpg">
             <h1 class="title-font sm:text-4xl text-3xl mb-4 font-serif font-medium text-gray-900">OUR VISION</h1>
-            <p class="leading-relaxed">Habitat conservation is essential for the survival and well-being of many species of plants and animals. Habitats provide the necessary resources and conditions that allow species to live, reproduce, and thrive. When habitats are lost or degraded, it can have serious consequences for the species that depend on them, including population declines and even extinction. Habitat loss is often caused by human activities, such as urbanization, agriculture, and resource extraction, and it is important to take steps to minimize these impacts and protect habitats for the benefit of wildlife and the environment as a whole.</p>
+            <p class="leading-relaxed">We envision a world where habitat conservation is paramount, safeguarding the survival of diverse plant and animal species. Through generous donations and extensive awareness efforts, we strive to combat habitat loss caused by human activities like urbanization and resource extraction. Our vision is a future where every individual plays a role in protecting endangered species and preserving vital ecosystems. Together, let's create a world where biodiversity thrives, and harmony between humanity and nature is achieved for generations to come. Join us in our mission towards a sustainable and resilient planet.</p>
         </div>
     </div> 
     <hr class="border-t border-gray-300 my-0 w-full mb-20" id="about">
    <u><h1 class="title-font sm:text-4xl text-3xl mb-4 font-serif font-medium text-gray-900 text-center">ABOUT US</h1></u> 
     <h4 class=" sm:text-3xl text-2xl font-serif font-medium text-gray-900 text-center">Project Goal: </h4>
-    <h4 class="mb-4 text-center">Our website aims to raise awareness about wildlife extinction, urging action to preserve endangered species and safeguard biodiversity.</h4>
+    <h4 class="mb-4 text-center">Our website encourages donations and awareness for wildlife extinction, advocating for the preservation of endangered species and biodiversity.</h4>
     <h1 class="mb-0 sm:text-3xl text-2xl font-serif font-medium text-gray-900 text-center">Contributors:</h1>
     <div class="flex flex-wrap justify-center items-center mt-0 mb-0">
         <div class="w-full sm:w-1/2 md:w-1/5 lg:w-1/5 xl:w-1/5 bg-white bg-opacity-50 rounded-lg overflow-hidden mx-4 mb-4">            
@@ -132,7 +147,7 @@
                         <img class="w-6 h-6 inline-block ml-1" src="linkedin_logo.png" alt="LinkedIn Logo">
                        </a>
                 </p>
-                <p class="text-sm">Frontend</p>
+                <p class="text-sm">Frontend/AI Engineer</p>
             </div>
         </div>
         <div class="w-full sm:w-1/2 md:w-1/5 lg:w-1/5 xl:w-1/5 bg-white bg-opacity-50 rounded-lg overflow-hidden mx-4 mb-4">            
@@ -175,6 +190,25 @@
           </div>
         </div>
       </footer>
-      <script src="script.js"></script>
-</body>
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed(".auto-type",{
+        strings: ["TO PROTECT!","TO SAVE!","TO SUSTAIN!"],
+        typeSpeed: 100,
+        backSpeed:100,
+        loop : true
+
+      })
+      function goToPage() {
+            window.location.href = 'explore.html';
+          }
+function Menu(e){
+  let list = document.querySelector('ul');
+  e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+}
+function goDonate() {
+  window.location.href = 'donate.html';
+}
+    </script>
+    </body>
 </html>
