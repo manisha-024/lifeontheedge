@@ -1,7 +1,12 @@
-function goToPage() {
-            window.location.href = 'explore.html';
-          }
-function Menu(e){
-  let list = document.querySelector('ul');
-  e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
-}
+  function animals() {
+    window.location.href = 'https://www.wcs.org/support';
+  }
+  function plants() {
+    window.location.href = 'https://app.sheepcrm.com/bgci/appeals/';
+  }
+  function forests() {
+    window.location.href = 'https://www.rainforesttrust.org/urgent-projects/brazilian-amazon-fund/?form=FUNJQDGPVZZ';
+  }
+  function join() {
+    window.location.href = 'https://www.cbd.int/idb';
+  }
