@@ -11,22 +11,65 @@
   <header class="w-full fixed" style="background-image: url('colors1.jpg'); padding:0%;">
     <nav class="p-5 shadow md:flex md:items-center md:justify-between mb-0">
       <div class="flex justify-between items-center ">
-        <span class="text-2xl font-[Poppins] cursor-pointer">
+        <span class="text-2xl font-serif cursor-pointer">
           <img class="h-10 inline"
             src="inner/logo1.png">LifeOnTheEdge
         </span>
       </div>
     </nav>
   </header> 
-  <section class="text-gray-600 body-font relative h-screen flex items-center px-8 py-8">
-    <div class="lg:w-2/3 md:w-1/2 container mx-auto px-2 py-3 bg-white bg-opacity-60 rounded-lg">
-        <div class="flex flex-col text-center w-full mb-12">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">🌱 Coming Soon! 🌱</h1>
-            <p class="lg:w-2/3 mx-auto leading-relaxed text-xl">🦁Collaborating with NGOs to Tackle Wildlife Extinction🐾</p>
-            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Stay tuned for updates on our upcoming initiative to work alongside NGOs in protecting endangered species. Together, we can make a meaningful impact on wildlife conservation! 🌍✨</p>
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h2 class="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">ACT NOW, SAVE LIVES</h2>
+        <h1 class="sm:text-3xl text-2xl font-serif font-medium title-font mb-4 text-gray-900">DONATE TO PRESERVE LIFE</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+          Donate to support wildlife, plants, or forests, or join a conservation campaign. Your contribution makes a significant difference in protecting our natural world.</p>      </div>
+      <div class="flex flex-wrap lg:p" >
+        <div class="xl:w-1/2 mx-auto lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60" style="background-image:url('wildlife2.png'); background-size: cover; background-position: center;">
+          <h2 class="text-lg sm:text-xl text-gray-900 font-serif font-medium title-font mb-2">WILDLIFE</h2>
+          <p class="leading-relaxed text-base mb-4 text-black">
+           Donate to combat the global wildlife extinction crisis. Your contribution supports vital conservation efforts worldwide.</p>
+           <button onclick="animals()" class="inline-flex font-serif items-center bg-blue-300 border-0 py-1 px-2 focus:outline-none hover:bg-gray-300 rounded text-lg md:text-xl mt-4 md:mt-0 mr-3">Donate Now
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+        </button>
         </div>
+        <div class="xl:w-1/2 lg:w-1/2 mx-auto md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60" style="background-image:url('getplant.jpg'); background-size: cover; background-position: center;">
+          <h2 class="text-lg sm:text-xl text-gray-900 font-serif font-medium title-font mb-2">PLANTS</h2>
+          <p class="leading-relaxed text-base mb-4 text-black">
+            Donate to save endangered plant species worldwide. Your contribution is crucial for preserving biodiversity and ensuring ecosystem health.</p>
+            <button onclick="plants()" class="inline-flex font-serif items-center bg-blue-300 border-0 py-1 px-2 focus:outline-none hover:bg-gray-300 rounded text-lg md:text-xl mt-4 md:mt-0 mr-3">Donate Now
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+          </button>
+        </div>
+        <div class="xl:w-1/2 lg:w-1/2 md:w-full mx-auto px-8 py-6 border-l-2 border-gray-200 border-opacity-60" style="background-image:url('forests.png'); background-size: cover; background-position: center;">
+          <h2 class="text-lg sm:text-xl text-gray-900 font-serif font-medium title-font mb-2">FORESTS</h2>
+          <p class="leading-relaxed text-base mb-4 text-black">
+            Support forests continent-wide by donating today. Your contribution helps combat deforestation, habitat loss, and preserves biodiversity.</p>
+            <button onclick="forests()" class="inline-flex font-serif items-center bg-blue-300 border-0 py-1 px-2 focus:outline-none hover:bg-gray-300 rounded text-lg md:text-xl mt-4 md:mt-0 mr-3">Donate Now
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+          </button>
+        </div>
+        <div class="xl:w-1/2 lg:w-1/2 md:w-full mx-auto px-8 py-6 border-l-2 border-gray-200 border-opacity-60" style="background-image:url('quiz3.png'); background-size: cover; background-position: center; min-height: 250px; min-width: 300px;">
+          <h2 class="text-lg sm:text-xl text-gray-900 font-serif font-medium title-font mb-2">JOIN A CAMPAIGN</h2>
+          <p class="leading-relaxed text-base mb-4 text-black">
+
+            Join our campaign to tackle wildlife extinction. Take action with us to protect endangered species and conserve biodiversity.</p>            <button onclick="join()" class="inline-flex font-serif items-center bg-blue-300 border-0 py-1 px-2 focus:outline-none hover:bg-gray-300 rounded text-lg md:text-xl mt-4 md:mt-0 mr-3">Join Now
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+          </button>
+          </a>
+        </div>
+      </div>
     </div>
-</section>
+  </section> 
   <footer class="bg-gray-800 fixed bottom-0 w-full text-gray-300 py-6 ">
     <div class="container mx-auto flex flex-col md:flex-row justify-center items-center">
       <div class="flex flex-col items-center md:flex-row">
@@ -37,5 +80,6 @@
       </div>
     </div>
   </footer>
+  <script src="script.js"></script>
   </body>
   </html> 
